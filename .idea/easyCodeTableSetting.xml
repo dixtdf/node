@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EasyCodeTableSetting">
+    <option name="tableInfoMap">
+      <map>
+        <entry key="dict">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="数据字典表" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="主键ID" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="类型值，自关联（0-类型数据，非0-字典数据）" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="type" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="字典名称" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="label" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="字典值" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="value" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="排序" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="sort" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="系统数据标识, 系统数据时不允许修改" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="sysFlag" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="是否为选项（用于区分参数及选项，参数时VALUE不触发唯一判断）" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="selectFlag" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建者" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="createBy" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="createTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改者" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="updateBy" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="updateTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="删除标识：0-未删除，非0-删除（非0为删除时间戳）" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="delFlag" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="备注" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="remark" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="Dict" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="" />
+              <option name="savePackageName" value="" />
+              <option name="savePath" value="" />
+              <option name="templateGroupName" value="" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="ds_model_version">
+          <value>
+            <TableInfoDTO>
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="集合ID" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="listId" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="名称" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="name" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="图标" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="icon" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="模型类型" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="modelType" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="入口文件地址" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="indexUrl" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="存储地址" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="localPath" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="上传时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="uploadTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="文件校验md5码" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="md5" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="模型大小" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="modelSize" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="动画持续时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="animationTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="加载排序" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="sort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="版本描述" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="version" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="版本" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="description" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="上传完成状态" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="status" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="点云标准来源" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="pointCloudStandard" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="有无真彩色" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="hasClass" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建者" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="createBy" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="createTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改者" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="updateBy" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="updateTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="删除标识：0-未删除，非0-删除（非0为删除时间戳）" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="delFlag" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="备注" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="remark" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="DsModelVersion" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="demo" />
+              <option name="savePackageName" value="" />
+              <option name="savePath" value="./src/main/java" />
+              <option name="templateGroupName" value="Default" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="schedule_job_log">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="定时任务执行日志" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="主键ID" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="任务id" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="jobId" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="spring bean名称" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="beanName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="参数" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="params" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="方法名" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="methodName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="任务状态    0：成功    1：失败" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="status" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="失败信息" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="error" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="耗时(单位：毫秒)" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="times" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建者" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="createBy" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="createTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改者" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="updateBy" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改时间" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="updateTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="删除标识：0-未删除，非0-删除（非0为删除时间戳）" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="delFlag" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="备注" />
+                    <option name="custom" value="false" />
+                    <option name="name" value="remark" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="ScheduleJobLog" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="demo" />
+              <option name="savePackageName" value="" />
+              <option name="savePath" value="./src/main/java" />
+              <option name="templateGroupName" value="Default" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="uav_basics.account_space">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="设备树表" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="编号" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="设备guid" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spaceGuid" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="模型编码 对应模型编码" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="modelCode" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="设备名称" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spaceName" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="节点类型 0:实际节点  1:虚拟节点 2:镜像节点 " />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="nodeType" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="设备路径 根节点到当前节点的guid以英文逗号拼接" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="path" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="镜像关联设备guid 镜像节点关联节点的guid,镜像节点自身无实际数据，展示数据从关联节点中查询" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="linkGuid" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="父节点设备guid" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="spaceParentGuid" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建人id 创建人id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="createUser" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建部门" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="createDept" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建日期 创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="createTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改人id 修改人id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="updateUser" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改时间 修改时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="updateTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="删除标记 删除标记（1:已删除  0:未删除）" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="isDeleted" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="排序字段 排序字段" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="sort" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="部门编码" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="deptCode" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="经度" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="longitude" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="纬度" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="latitude" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="高程" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="elevation" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="坐标" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="coordinate" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="电压等级" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="voltageLevel" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="性质" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="nature" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="回路数" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map />
+                    </option>
+                    <option name="name" value="loopNumber" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="AccountSpace" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="chongqing_server" />
+              <option name="savePackageName" value="zxhc.chongqing.server.modules.ledger" />
+              <option name="savePath" value="./chongqing_server/src/main/java/zxhc/chongqing/server/modules/ledger" />
+              <option name="templateGroupName" value="Default" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="uav_basics.basic_span_ledger">
+          <value>
+            <TableInfoDTO>
+              <option name="comment" value="档距段" />
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="资源id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="psrId" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="资产id" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="astId" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="设备名称" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="name" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="所属地市" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="city" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="运维单位" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="maintOrg" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="维护班组" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="maintGroup" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="设备主人" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="equipmentOwner" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="上级线路" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="superiorLine" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="所属线路" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="line" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="所属导线" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="wire" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="电压等级" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="voltageLevel" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="运行状态" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="psrState" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="投运日期" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="startTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="退运日期" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="stopTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="起始杆塔" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="startPole" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="终止杆塔" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="stopPole" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="排列方式" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="wireArrangement" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="导线长度" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="length" />
+                    <option name="type" value="java.lang.Double" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="参考长度" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="referenceLength" />
+                    <option name="type" value="java.lang.Double" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="所属馈线" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="feeder" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="是否农网" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="isRural" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="供电区域" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="supplyArea" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="所属主干/分支线" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="branchFeeder" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="ctime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="最新更新时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="lastUpdateTime" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="配电 dms 输电 tms" />
+                    <option name="custom" value="false" />
+                    <option name="ext">
+                      <map>
+                        <entry key="jdbcType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                        <entry key="sqlType">
+                          <value>
+                            <Object />
+                          </value>
+                        </entry>
+                      </map>
+                    </option>
+                    <option name="name" value="professionalType" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="BasicSpanLedger" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="chongqing_server" />
+              <option name="savePackageName" value="zxhc.chongqing.server.modules.ledger" />
+              <option name="savePath" value="./chongqing_server/src/main/java/zxhc/chongqing/server/modules/ledger" />
+              <option name="templateGroupName" value="Default" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
