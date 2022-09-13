@@ -1,7 +1,7 @@
 package club.xtdf.node;
 
-import club.xtdf.node.tree.pojo.User;
-import club.xtdf.node.tree.utils.ForestNodeMerger;
+import club.xtdf.node.pojo.User;
+import club.xtdf.node.utils.ForestNodeMerger;
 
 import java.util.LinkedList;
 import java.util.List;

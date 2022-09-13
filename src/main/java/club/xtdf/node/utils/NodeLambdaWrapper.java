@@ -1,7 +1,7 @@
 package club.xtdf.node.utils;
 
-import club.xtdf.node.tree.support.NodeFunction;
-import club.xtdf.node.tree.support.SerializedLambda;
+import club.xtdf.node.support.NodeFunction;
+import club.xtdf.node.support.SerializedLambda;
 
 import java.io.*;
 import java.util.Locale;

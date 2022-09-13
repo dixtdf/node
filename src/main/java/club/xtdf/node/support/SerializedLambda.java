@@ -1,6 +1,6 @@
 package club.xtdf.node.support;
 
-import org.springframework.util.SerializationUtils;
+import org.apache.commons.lang3.SerializationUtils;
 
 import java.io.*;
 import java.lang.invoke.MethodHandleInfo;
