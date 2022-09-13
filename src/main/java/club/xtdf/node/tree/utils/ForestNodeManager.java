@@ -1,6 +1,6 @@
-package club.xtdf.node.utils;
+package club.xtdf.node.tree.utils;
 
-import club.xtdf.node.support.NodeFunction;
+import club.xtdf.node.tree.support.NodeFunction;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;

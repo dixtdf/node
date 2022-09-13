@@ -1,4 +1,4 @@
-package club.xtdf.node.pojo;
+package club.xtdf.node.tree.pojo;
 
 import java.io.Serializable;
 import java.util.ArrayList;

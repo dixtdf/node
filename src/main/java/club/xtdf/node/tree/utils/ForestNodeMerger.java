@@ -1,6 +1,6 @@
-package club.xtdf.node.utils;
+package club.xtdf.node.tree.utils;
 
-import club.xtdf.node.support.NodeFunction;
+import club.xtdf.node.tree.support.NodeFunction;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.io.Serializable;
