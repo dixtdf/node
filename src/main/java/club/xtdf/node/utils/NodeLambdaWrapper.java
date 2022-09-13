@@ -1,4 +1,4 @@
-package club.xtdf.node.tree.utils;
+package club.xtdf.node.utils;
 
 import club.xtdf.node.tree.support.NodeFunction;
 import club.xtdf.node.tree.support.SerializedLambda;

@@ -1,4 +1,4 @@
-package club.xtdf.node.tree;
+package club.xtdf.node;
 
 import club.xtdf.node.tree.pojo.User;
 import club.xtdf.node.tree.utils.ForestNodeMerger;

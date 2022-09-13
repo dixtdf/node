@@ -1,4 +1,4 @@
-package club.xtdf.node.tree.utils;
+package club.xtdf.node.utils;
 
 import club.xtdf.node.tree.support.NodeFunction;
 
@@ -70,8 +70,8 @@ public class ForestNodeManager<T> {
     public void addParentId(String parentId) {
         parentIds.add(parentId);
     }
-    
-     /**
+
+    /**
      * 增加父节点ID
      *
      * @param parentKeys

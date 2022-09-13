@@ -1,4 +1,4 @@
-package club.xtdf.node.tree.utils;
+package club.xtdf.node.utils;
 
 import club.xtdf.node.tree.support.NodeFunction;
 import org.apache.commons.lang3.ArrayUtils;

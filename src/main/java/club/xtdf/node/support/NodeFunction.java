@@ -1,4 +1,4 @@
-package club.xtdf.node.tree.support;
+package club.xtdf.node.support;
 
 import java.io.Serializable;
 import java.util.function.Function;
