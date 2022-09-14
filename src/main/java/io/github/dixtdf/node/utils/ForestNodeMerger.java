@@ -1,6 +1,6 @@
-package club.xtdf.node.tree.utils;
+package io.github.dixtdf.node.utils;
 
-import club.xtdf.node.tree.support.NodeFunction;
+import io.github.dixtdf.node.support.NodeFunction;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.io.Serializable;

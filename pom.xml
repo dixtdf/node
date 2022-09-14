@@ -10,7 +10,7 @@
         <version>9</version>
     </parent>
 
-    <groupId>club.xtdf.node.tree</groupId>
+    <groupId>io.github.dixtdf</groupId>
     <artifactId>node</artifactId>
     <version>1.0</version>
 
@@ -30,8 +30,8 @@
 
     <scm>
         <tag>1.0.0-SNAPSHOT</tag>
-        <url>https://github.com/dixtdf/Node-Tree-Plus</url>
-        <connection>https://github.com/dixtdf/Node-Tree-Plus.git</connection>
+        <url>https://github.com/dixtdf/node</url>
+        <connection>https://github.com/dixtdf/node.git</connection>
     </scm>
 
     <developers>

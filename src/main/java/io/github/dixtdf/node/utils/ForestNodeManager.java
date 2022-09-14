@@ -1,6 +1,6 @@
-package club.xtdf.node.tree.utils;
+package io.github.dixtdf.node.utils;
 
-import club.xtdf.node.tree.support.NodeFunction;
+import io.github.dixtdf.node.support.NodeFunction;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
