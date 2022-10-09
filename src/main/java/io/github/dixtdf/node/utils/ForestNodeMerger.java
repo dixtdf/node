@@ -43,10 +43,9 @@ public class ForestNodeMerger<T> implements Serializable {
      * @return 多棵树的根节点集合
      */
     public List<T> merge(List<T> items, NodeFunction<T, ?> key, NodeFunction<T, ?> parent, NodeFunction<T, ?> children, String... rootKey) {
-        List<String> rootKeyList = Arrays.asList(rootKey);
         ForestNodeManager<T> forestNodeManager = new ForestNodeManager<>(items, key);
         if (ArrayUtils.isNotEmpty(rootKey)) {
-            forestNodeManager.addParentKeys(rootKeyList);
+            forestNodeManager.addParentKeys(Arrays.asList(rootKey));
         }
         items.forEach(forestNode -> {
             // 查询父节点
@@ -71,10 +70,13 @@ public class ForestNodeMerger<T> implements Serializable {
                 throw new RuntimeException(e);
             }
         });
+        if (ArrayUtils.isEmpty(rootKey)) {
+            return forestNodeManager.getRoot();
+        }
         return forestNodeManager.getRoot().stream().filter(a -> {
             try {
                 String b = (String) a.getClass().getMethod(new NodeLambdaWrapper<T>().getColumn(key)).invoke(a);
-                return rootKeyList.stream().anyMatch(c -> StringUtils.equals(c, b));
+                return Arrays.asList(rootKey).stream().anyMatch(c -> StringUtils.equals(c, b));
             } catch (NoSuchMethodException e) {
                 throw new RuntimeException(e);
             } catch (InvocationTargetException e) {
