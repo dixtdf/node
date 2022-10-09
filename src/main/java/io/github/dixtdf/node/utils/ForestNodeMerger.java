@@ -2,6 +2,7 @@ package io.github.dixtdf.node.utils;
 
 import io.github.dixtdf.node.support.NodeFunction;
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
@@ -9,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 森林节点合并工具
@@ -41,9 +43,10 @@ public class ForestNodeMerger<T> implements Serializable {
      * @return 多棵树的根节点集合
      */
     public List<T> merge(List<T> items, NodeFunction<T, ?> key, NodeFunction<T, ?> parent, NodeFunction<T, ?> children, String... rootKey) {
+        List<String> rootKeyList = Arrays.asList(rootKey);
         ForestNodeManager<T> forestNodeManager = new ForestNodeManager<>(items, key);
         if (ArrayUtils.isNotEmpty(rootKey)) {
-            forestNodeManager.addParentKeys(Arrays.asList(rootKey));
+            forestNodeManager.addParentKeys(rootKeyList);
         }
         items.forEach(forestNode -> {
             // 查询父节点
@@ -68,7 +71,18 @@ public class ForestNodeMerger<T> implements Serializable {
                 throw new RuntimeException(e);
             }
         });
-        return forestNodeManager.getRoot();
+        return forestNodeManager.getRoot().stream().filter(a -> {
+            try {
+                String b = (String) a.getClass().getMethod(new NodeLambdaWrapper<T>().getColumn(key)).invoke(a);
+                return rootKeyList.stream().anyMatch(c -> StringUtils.equals(c, b));
+            } catch (NoSuchMethodException e) {
+                throw new RuntimeException(e);
+            } catch (InvocationTargetException e) {
+                throw new RuntimeException(e);
+            } catch (IllegalAccessException e) {
+                throw new RuntimeException(e);
+            }
+        }).collect(Collectors.toList());
     }
 
 }
