@@ -45,6 +45,7 @@ public class ForestNodeMerger<T> implements Serializable {
     public List<T> merge(List<T> items, NodeFunction<T, ?> key, NodeFunction<T, ?> parent, NodeFunction<T, ?> children, String... rootKey) {
         ArrayList<String> str = new ArrayList(rootKey.length);
         Collections.addAll(str, rootKey);
+        str.removeAll(Collections.singleton(null));
 
         ForestNodeManager<T> forestNodeManager = new ForestNodeManager<>(items, key);
         if (CollectionUtils.isNotEmpty(str)) {
