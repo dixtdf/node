@@ -1,14 +1,14 @@
 package io.github.dixtdf.node.utils;
 
 import io.github.dixtdf.node.support.NodeFunction;
-import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,7 +29,7 @@ public class ForestNodeMerger<T> implements Serializable {
      * @return 多棵树的根节点集合
      */
     public List<T> merge(List<T> items, NodeFunction<T, ?> key, NodeFunction<T, ?> parent, NodeFunction<T, ?> children) {
-        return merge(items, key, parent, children, null);
+        return merge(items, key, parent, children, new String[0]);
     }
 
     /**
@@ -43,9 +43,12 @@ public class ForestNodeMerger<T> implements Serializable {
      * @return 多棵树的根节点集合
      */
     public List<T> merge(List<T> items, NodeFunction<T, ?> key, NodeFunction<T, ?> parent, NodeFunction<T, ?> children, String... rootKey) {
+        ArrayList<String> str = new ArrayList(rootKey.length);
+        Collections.addAll(str, rootKey);
+
         ForestNodeManager<T> forestNodeManager = new ForestNodeManager<>(items, key);
-        if (ArrayUtils.isNotEmpty(rootKey)) {
-            forestNodeManager.addParentKeys(Arrays.asList(rootKey));
+        if (CollectionUtils.isNotEmpty(str)) {
+            forestNodeManager.addParentKeys(str);
         }
         items.forEach(forestNode -> {
             // 查询父节点
@@ -70,13 +73,10 @@ public class ForestNodeMerger<T> implements Serializable {
                 throw new RuntimeException(e);
             }
         });
-        if (ArrayUtils.isEmpty(rootKey)) {
-            return forestNodeManager.getRoot();
-        }
-        return forestNodeManager.getRoot().stream().filter(a -> {
+        return CollectionUtils.isEmpty(str) ? forestNodeManager.getRoot() : forestNodeManager.getRoot().stream().filter(a -> {
             try {
                 String b = (String) a.getClass().getMethod(new NodeLambdaWrapper<T>().getColumn(key)).invoke(a);
-                return Arrays.asList(rootKey).stream().anyMatch(c -> StringUtils.equals(c, b));
+                return str.stream().anyMatch(c -> StringUtils.equals(c, b));
             } catch (NoSuchMethodException e) {
                 throw new RuntimeException(e);
             } catch (InvocationTargetException e) {
